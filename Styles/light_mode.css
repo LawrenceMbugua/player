@@ -80,6 +80,10 @@
   box-shadow: var(--btn_box_shadow);
 }
 
+.music_player.light_mode .playlist_container .track_container.active button:hover {
+  background: var(--vibrant);
+}
+
 .music_player.light_mode .playlist_container .track_container.active button i {
   color: var(--light);
 }
@@ -203,6 +207,10 @@
 .controls_page.light_mode .bottom_half .controls .play_pause {
   background: var(--vibrant);
   box-shadow: var(--btn_box_shadow);
+}
+
+.controls_page.light_mode .bottom_half .controls .play_pause:hover {
+  background: var(--vibrant);
 }
 
 .controls_page.light_mode .bottom_half .controls .play_pause i {
