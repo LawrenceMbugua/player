@@ -1,0 +1,210 @@
+:root {
+  --vibrant: #8894db;
+  --vibrant_light: #e0eaf5;
+  --btn_background: #ddebfa;
+  --btn_padding: 12px;
+  --dominant: #bdcddd;
+  --muted: #785888;
+  --muted_dark: #ccc9db;
+  --muted_light: #cedff0;
+  --btn_box_shadow: -3px -3px 7px #ffffff73,
+    3px 3px 5px rgba(94, 104, 121, 0.288);
+  --i_box_shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  --i_color: #b0b0b4;
+  /* --i_color: linear-gradient(blue, greenyellow); */
+  --i_color_checked: rgb(218, 126, 126);
+  --track_color: grey;
+  --artist_color: #aeaeb8;
+  --img_container_box_shadow: 5px 5px 50px #7f7f99, -5px -5px 30px #ffffff;
+  --track_progress_input: 2px 2px 10px #ffffff;
+  --btn_hover_background_light: var(--dominant);
+  --btn_active_background_light: var(--dominant);
+}
+
+.light_mode {
+  background: var(--dominant);
+
+}
+
+.music_player.light_mode {
+  background: var(--vibrant_light);
+}
+
+.music_player.light_mode .top p {
+  color: var(--artist_color);
+}
+
+.music_player.light_mode .top #mode_toggler {
+  background: var(--dominant);
+}
+
+.music_player.light_mode .top #mode_toggler i {
+  color: black;
+}
+
+.music_player.light_mode .top .album_cover button {
+  background: var(--btn_background);
+  box-shadow: var(--btn_box_shadow);
+}
+.music_player.light_mode .top .album_cover button:hover {
+  background: var(--btn_hover_background_light);
+}
+
+.music_player.light_mode .top .album_cover button:active {
+  background: var(--btn_active_background_light);
+}
+
+.music_player.light_mode .top .album_cover button i {
+  color: var(--i_color);
+}
+
+.music_player.light_mode .top .album_cover .img_container {
+  background-image: url("../Assets/album_cover3.jpeg");
+  border: 5px solid rgb(194, 194, 194);
+  box-shadow: 0px 0px 30px #c1c1c4;
+}
+
+/* PLAYLIST */
+
+/* ******* ACTIVE CLIP ******** */
+
+.music_player.light_mode .playlist_container .track_container.active {
+  border-radius: 16px;
+  background: var(--muted_light);
+  box-shadow: none;
+}
+
+.music_player.light_mode .playlist_container .track_container.active button {
+  background: var(--vibrant);
+  box-shadow: var(--btn_box_shadow);
+}
+
+.music_player.light_mode .playlist_container .track_container.active button i {
+  color: var(--light);
+}
+
+/* ******* END OF ACTIVE CLIP ******** */
+
+.music_player.light_mode
+  .playlist_container
+  .track_container
+  .left
+  .track_name {
+  color: var(--track_color);
+}
+
+.music_player.light_mode .playlist_container .track_container .left .artist {
+  color: var(--artist_color);
+}
+
+.music_player.light_mode .playlist_container .track_container button {
+  padding: var(--btn_padding);
+  background: var(--btn_background);
+  box-shadow: var(--btn_box_shadow);
+}
+
+.music_player.light_mode .playlist_container .track_container button:hover {
+  background: var(--btn_hover_background_light);
+}
+
+.music_player.light_mode .playlist_container .track_container button:active {
+  background: var(--btn_active_background_light);
+}
+
+.music_player.light_mode .playlist_container .track_container button i {
+  color: var(--i_color);
+}
+
+/* ***********   CONTROLS PAGE   ************* */
+
+.controls_page.light_mode {
+  background: var(--vibrant_light);
+}
+
+.controls_page.light_mode .top_half {
+  height: fit-content;
+
+  /* border-bottom: 1px solid; */
+}
+
+.controls_page.light_mode .top_half .options button {
+  background: var(--btn_background);
+  box-shadow: var(--btn_box_shadow);
+}
+
+.controls_page.light_mode .top_half .options button:hover {
+  background: var(--btn_hover_background_light);
+}
+
+.controls_page.light_mode .top_half .options button:active {
+  background: var(--btn_active_background_light);
+}
+
+.controls_page.light_mode .top_half .options button i {
+  color: var(--i_color);
+}
+
+.controls_page.light_mode .top_half .options .title {
+  color: var(--artist_color);
+}
+
+.controls_page.light_mode .top_half .img_container {
+  background-image: url("../Assets/album_cover3.jpeg");
+  border: 6px solid rgb(175, 182, 197);
+  box-shadow: var(--img_container_box_shadow);
+}
+
+/* Bottom half */
+
+.controls_page.light_mode .bottom_half .track_name {
+  color: var(--track_color);
+}
+
+.controls_page.light_mode .bottom_half .artist {
+  color: var(--artist_color);
+}
+
+.controls_page.light_mode .bottom_half .track_progress span {
+  color: var(--artist_color);
+}
+
+.controls_page.light_mode .bottom_half .track_progress input {
+  background: var(--muted_light);
+  box-shadow: var(--track_progress_input);
+}
+
+.controls_page.light_mode
+  .bottom_half
+  .track_progress
+  input::-webkit-slider-thumb {
+  background: var(--vibrant);
+  box-shadow: -400px 0 0 400px var(--vibrant), -400px 0 0 400px var(--vibrant);
+}
+
+.controls_page.light_mode .bottom_half .controls button {
+  background: var(--vibrant_light);
+  box-shadow: var(--btn_box_shadow);
+  color: var(--i_color);
+}
+
+.controls_page.light_mode .bottom_half .controls button:hover {
+  background: var(--btn_hover_background_light);
+}
+
+.controls_page.light_mode .bottom_half .controls button:active {
+  background: var(--btn_active_background_light);
+}
+
+.controls_page.light_mode .bottom_half .controls button i {
+  color: var(--i_color);
+}
+
+.controls_page.light_mode .bottom_half .controls .play_pause {
+  background: var(--vibrant);
+  box-shadow: var(--btn_box_shadow);
+}
+
+.controls_page.light_mode .bottom_half .controls .play_pause i {
+  color: var(--light);
+}

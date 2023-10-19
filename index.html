@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/light_mode.css" />
+    <script src="./Scripts/script.js" defer></script>
+  </head>
+  <body class="body">
+    <!-- PLAYLIST PAGE -->
+
+    <div class="music_player">
+      <div class="top">
+        <p class="album_name">MUSIC PLAYER</p>
+
+        <button
+          id="mode_toggler"
+          style="color: grey; padding: 8px; border-radius: 50%"
+        >
+          <i class="fa fa-sun"></i>
+        </button>
+
+        <div class="album_cover">
+          <button class="like">
+            <i class="fa fa-heart" style="color: var(--i_color_checked)"></i>
+          </button>
+
+          <div class="img_container"></div>
+
+          <button id="view_controls" class="options">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- PLAYLIST -->
+      <div class="playlist_container"></div>
+    </div>
+
+    <!-- CONTROLS PAGE -->
+
+    <div class="controls_page">
+      <div class="top_half">
+        <div class="options">
+          <button id="back_button">
+            <i class="fa fa-arrow-left"></i>
+          </button>
+
+          <span class="title">PLAYING NOW</span>
+
+          <button>
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="img_container" class="img_container">
+          <canvas id="visualizer" class=""> </canvas>
+        </div>
+      </div>
+
+      <div class="bottom_half">
+        <p class="track_name track_title"></p>
+        <p class="artist track_artist"></p>
+
+        <div class="track_progress">
+          <span id="current_track_time" class="current_track_time">1:57</span>
+          <span id="track_duration" class="track_duration">3:48</span>
+          <input
+            onchange="changeCurrentTime()"
+            id="progress_bar"
+            type="range"
+            value="0"
+          />
+        </div>
+
+        <div class="controls">
+          <button id="previous_button">
+            <i class="fa fa-backward"></i>
+          </button>
+          <button class="play_pause play_pause_button">
+            <i class="fa fa-play"></i>
+          </button>
+          <button id="next_button">
+            <i class="fa fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <audio loop src=""></audio>
+  </body>
+</html>
