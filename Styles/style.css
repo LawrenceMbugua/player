@@ -161,6 +161,10 @@ body {
 .music_player .playlist_container .track_container.active button:active {
   background: var(--bright-orange);
 }
+
+.music_player .playlist_container .track_container.active button:hover {
+  background: linear-gradient(#e04808, #e45a1f);
+}
 .music_player .playlist_container .track_container.active button i {
   color: var(--light);
 }
