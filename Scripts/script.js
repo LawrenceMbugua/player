@@ -6,6 +6,7 @@ const tracks = [
     cover_image: "img.jpg",
     genre: "hip hop",
   },
+
   {
     track_id: 2,
     track_name: "selfish",
@@ -165,22 +166,16 @@ const tracks = [
     cover_image: "img.jpg",
     genre: "pop",
   },
+
   {
     track_id: 24,
-    track_name: "wild ones",
-    artist: "sia Ft. Florida",
-    cover_image: "img.jpg",
-    genre: "pop",
-  },
-  {
-    track_id: 25,
     track_name: "i gotta feeling",
     artist: "black eyed peas",
     cover_image: "img.jpg",
     genre: "pop",
   },
   {
-    track_id: 26,
+    track_id: 25,
     track_name: "flames",
     artist: "David_Guetta_Sia",
     cover_image: "img.jpg",
