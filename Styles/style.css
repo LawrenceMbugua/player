@@ -22,7 +22,7 @@
   --img_container_box_shadow_dark: -3px -3px 30px #505052,
     inset 0px 0px 10px rgb(27, 5, 5);
   --img_container_border: 5px solid rgb(31, 29, 29);
-  --btn_hover_background: var(--orange);
+  --btn_hover_background: var(--artist_color_dark);
   --btn_active_background: var(greenyellow);
 }
 button {
