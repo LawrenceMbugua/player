@@ -22,7 +22,7 @@
   --img_container_box_shadow_dark: -3px -3px 30px #505052,
     inset 0px 0px 10px rgb(27, 5, 5);
   --img_container_border: 5px solid rgb(31, 29, 29);
-  --btn_hover_background: var(--artist_color_dark);
+  --btn_hover_background: var(--light);
   --btn_active_background: var(greenyellow);
 }
 button {
@@ -421,6 +421,10 @@ button {
 .controls_page .bottom_half .controls .play_pause {
   background: linear-gradient(#e04808, #e45a1f);
   box-shadow: inset 0px 0px 10px 0px rgb(20, 20, 20);
+}
+
+.controls_page .bottom_half .controls .play_pause:hover {
+  background: linear-gradient(#e04808, #e45a1f);
 }
 
 .controls_page .bottom_half .controls .play_pause i {
