@@ -1,10 +1,10 @@
 const tracks = [
   {
     track_id: 1,
-    track_name: "motion",
-    artist: "TY dollar sign",
+    track_name: "still dre",
+    artist: "snoop dog Ft. Dr. Dre",
     cover_image: "img.jpg",
-    genre: "hip hop",
+    genre: "pop",
   },
 
   {
@@ -159,27 +159,28 @@ const tracks = [
     cover_image: "img.jpg",
     genre: "pop",
   },
-  {
-    track_id: 23,
-    track_name: "still dre",
-    artist: "snoop dog Ft. Dr. Dre",
-    cover_image: "img.jpg",
-    genre: "pop",
-  },
 
   {
-    track_id: 24,
+    track_id: 23,
     track_name: "i gotta feeling",
     artist: "black eyed peas",
     cover_image: "img.jpg",
     genre: "pop",
   },
   {
-    track_id: 25,
+    track_id: 24,
     track_name: "flames",
     artist: "David_Guetta_Sia",
     cover_image: "img.jpg",
     genre: "pop",
+  },
+
+  {
+    track_id: 25,
+    track_name: "motion",
+    artist: "TY dollar sign",
+    cover_image: "img.jpg",
+    genre: "hip hop",
   },
 ];
 
