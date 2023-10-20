@@ -407,12 +407,10 @@ button {
   padding: 30px;
   border: none;
   background: #2c2c35;
+
   
 }
 
-.controls_page .bottom_half .controls button i {
-  
-}
 
 .controls_page .bottom_half .controls button:hover {
   background: #2c2c35;

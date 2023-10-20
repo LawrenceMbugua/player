@@ -20,11 +20,11 @@
   --track_progress_input: 2px 2px 10px #ffffff;
   --btn_hover_background_light: var(--dominant);
   --btn_active_background_light: var(--dominant);
+  --img_container_border: 5px solid rgb(41, 34, 34);
 }
 
 .light_mode {
   background: var(--dominant);
-
 }
 
 .music_player.light_mode {
@@ -40,7 +40,7 @@
 }
 
 .music_player.light_mode .top #mode_toggler i {
-  color: black;
+  color: rgb(99, 97, 97);
 }
 
 .music_player.light_mode .top .album_cover button {
@@ -60,8 +60,8 @@
 }
 
 .music_player.light_mode .top .album_cover .img_container {
-  background-image: url("../Assets/album_cover3.jpeg");
-  border: 5px solid rgb(194, 194, 194);
+  background-image: url("../Assets/album_cover2.jpeg");
+  border: var(--img_container_border);
   box-shadow: 0px 0px 30px #c1c1c4;
 }
 
@@ -80,7 +80,10 @@
   box-shadow: var(--btn_box_shadow);
 }
 
-.music_player.light_mode .playlist_container .track_container.active button:hover {
+.music_player.light_mode
+  .playlist_container
+  .track_container.active
+  button:hover {
   background: var(--vibrant);
 }
 
@@ -106,6 +109,7 @@
   padding: var(--btn_padding);
   background: var(--btn_background);
   box-shadow: var(--btn_box_shadow);
+  border: 1px solid rgb(165, 165, 165);
 }
 
 .music_player.light_mode .playlist_container .track_container button:hover {
@@ -154,8 +158,8 @@
 }
 
 .controls_page.light_mode .top_half .img_container {
-  background-image: url("../Assets/album_cover3.jpeg");
-  border: 6px solid rgb(175, 182, 197);
+  background-image: url("../Assets/album_cover2.jpeg");
+  border: var(--img_container_border);
   box-shadow: var(--img_container_box_shadow);
 }
 
@@ -190,6 +194,7 @@
   background: var(--vibrant_light);
   box-shadow: var(--btn_box_shadow);
   color: var(--i_color);
+  border: 1px solid rgb(165, 165, 165);
 }
 
 .controls_page.light_mode .bottom_half .controls button:hover {
