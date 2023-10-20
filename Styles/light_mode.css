@@ -47,6 +47,7 @@
 .music_player.light_mode .top .album_cover button {
   background: var(--btn_background);
   box-shadow: var(--btn_box_shadow);
+  border: var(--btn_border);
 }
 .music_player.light_mode .top .album_cover button:hover {
   background: var(--btn_hover_background_light);
@@ -140,7 +141,7 @@
 .controls_page.light_mode .top_half .options button {
   background: var(--btn_background);
   box-shadow: var(--btn_box_shadow);
-  border: var(--btn_border)
+  border: var(--btn_border);
 }
 
 .controls_page.light_mode .top_half .options button:hover {
@@ -192,8 +193,7 @@
   box-shadow: -400px 0 0 400px var(--vibrant), -400px 0 0 400px var(--vibrant);
 }
 
-.controls_page.light_mode .bottom_half 
-.controls button {
+.controls_page.light_mode .bottom_half .controls button {
   background: var(--vibrant_light);
   box-shadow: var(--btn_box_shadow);
   color: var(--i_color);
