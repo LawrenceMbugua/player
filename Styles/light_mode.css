@@ -3,6 +3,7 @@
   --vibrant_light: #e0eaf5;
   --btn_background: #ddebfa;
   --btn_padding: 12px;
+  --btn_border: 1px solid rgb(165, 165, 165);
   --dominant: #bdcddd;
   --muted: #785888;
   --muted_dark: #ccc9db;
@@ -139,6 +140,7 @@
 .controls_page.light_mode .top_half .options button {
   background: var(--btn_background);
   box-shadow: var(--btn_box_shadow);
+  border: var(--btn_border)
 }
 
 .controls_page.light_mode .top_half .options button:hover {
@@ -190,11 +192,12 @@
   box-shadow: -400px 0 0 400px var(--vibrant), -400px 0 0 400px var(--vibrant);
 }
 
-.controls_page.light_mode .bottom_half .controls button {
+.controls_page.light_mode .bottom_half 
+.controls button {
   background: var(--vibrant_light);
   box-shadow: var(--btn_box_shadow);
   color: var(--i_color);
-  border: 1px solid rgb(165, 165, 165);
+  border: var(--btn_border);
 }
 
 .controls_page.light_mode .bottom_half .controls button:hover {
